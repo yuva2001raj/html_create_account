@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="mainid">
+<section id="registration-page">
+        <form class="signup-form">
+  <div>
+    <legend>
+<center>
+  <h1 style="color: rgb(53, 50, 50);">Create Account</h1><br>
+    <hr>
+<table>
+<tr>
+<td><label for="A" style="color:rgba(11, 207, 148, 0.966); font-style:italic;"><B>First name*</label><br>
+<input type="text" id="A" placeholder="enter your first name" size="33"></td>
+<td><label for="B" style="color: rgba(11, 207, 148, 0.966); font-style:italic;"><B>Last name</label><br>
+<input type="text" id="B" placeholder="enter your last name" size="33"></td>
+</tr>
+<tr>
+<td colspan="2"><label for="email" style="color: rgba(11, 207, 148, 0.966);font-style: italic;"><B>Email*</label><br>
+<input type="text" id="email" placeholder="enter your email" size="72"></td><br>
+</tr>
+<tr>
+<td><label for="pass" style="color: rgba(11, 207, 148, 0.966);font-style: italic;"><B>Password*</label><br>
+<input type="password" id="pass" placeholder="enter your password" size="33"></td>
+<td><label for="cpass" style="color: rgba(11, 207, 148, 0.966);font-style: italic;"><B>Confirm Password*</label><br>
+<input type="password" id="cpass" placeholder="enter your password again" size="33"></td>
+</tr>
+<tr>
+<td><label for="C" style="color: rgba(11, 207, 148, 0.966);font-style: italic;"><B>Gender:</label><br>
+<input type="radio" id="C" name="radio">
+<label for="C">Male</label>
+<input type="radio" id="C" name="radio">
+<label for="C">Female</label>
+<td><label for="D" style="color: rgba(11, 207, 148, 0.966);font-style: italic;"><B>Hobbies</label><br>
+<input type="checkbox" id="D">Music
+<input type="checkbox" id="D">Sports
+<input type="checkbox" id="D">Travel
+<input type="checkbox" id="D">Movies
+</td>
+</tr>
+<tr>
+<td><label style="color: rgba(11, 207, 148, 0.966);font-style: italic;"><B>Source of income</label><br>
+  <select style="min-width: 250px;">
+    <option value="Employed">Employed</option>
+    <option value="Unemployed">Unemployed</option>
+  </select>
+  <div class="input-group">
+  <td><label style="color: rgba(11, 207, 148, 0.966);font-style: italic;"><B>Income</label><br>
+  <div class="range-group">
+  <input type="range" style="min-width: 180px;" onChange="changeSliderValue(this.value)" min="20" max="200" step="5" value="20">
+  <label id="rangeSliderLabel">20 K</label></div>
+  </td>
+  </tr>
+  <tr>
+  <td><label style="color: rgba(11, 207, 148, 0.966);font-style: italic;"><B>Upload profile picture</label><br>
+  <input type="file" mxlength="40">
+  <td><label style="color: rgba(11, 207, 148, 0.966);font-style: italic;"><B>Age</label><br>
+  <input type="Age" size="33" placeholder="enter your age">
+  </td>
+  </tr>
+  <tr>
+  <td colspan="2"><label style="color: rgba(11, 207, 148, 0.966);font-style: italic;"><B>Bio</label><br>
+  <input type="text" style="height:100px;width:531px;font-size:14pt;">
+  </td>
+  </tr>
+</div>
+</table>
+<br>
+<button>Create</button>
+</center>
+</body></legend>
+</form>
+</section>
+ <script>
+        const changeSliderValue = (value) => {
+            document.getElementById("rangeSliderLabel").innerText = value + " K";
+        }
+    </script>
+</body>
+</html>
